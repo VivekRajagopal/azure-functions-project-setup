@@ -1,4 +1,8 @@
 {
+  "ignoreFiles": [
+    "assemblyinfo.*",
+    "*AssemblyInfo.*"
+  ],
   "typography": {
     "trailingWhitespaceOnLine": {
       "enabled": true,

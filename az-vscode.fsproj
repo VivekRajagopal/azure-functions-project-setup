@@ -8,6 +8,7 @@
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelloWorld.fs" />
     <Compile Include="HttpTrigger.fs" />
   </ItemGroup> 
   <ItemGroup>
