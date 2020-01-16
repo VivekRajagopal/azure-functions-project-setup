@@ -1,0 +1,18 @@
+#!/bin/sh
+
+echo "pre-commit hook: Testing for linting errors"
+echo "Requires dotnet-fsharplint http://fsprojects.github.io/FSharpLint/Console-Application.html"
+echo ""
+
+linting=$(dotnet-fsharplint -f az-vscode.fsproj)
+echo "Linting Result >>>>"
+echo $linting
+
+if [[ $linting = *"Summary: 0 warnings"* ]]; then
+  echo "Linting passed"
+  exit 0
+else
+  echo "Linting failed."
+  echo "Please address issue(s) above and try commiting again. Use dotnet-fsharplint to diagnose the issue(s)."
+  exit 1
+fi
