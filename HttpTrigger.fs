@@ -10,5 +10,5 @@ module HttpTrigger =
     let Run([<HttpTrigger(AuthorizationLevel.Function, "get", Route = null)>] req: HttpRequest , log: ILogger) =    
         log.LogInformation "C# HTTP trigger function processed a request."
         let name = req.Query.["name"]
-        name   
+        name    
 
