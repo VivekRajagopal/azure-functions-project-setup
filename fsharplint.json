@@ -1,0 +1,12 @@
+{
+  "typography": {
+    "trailingWhitespaceOnLine": {
+      "enabled": true,
+      "config": {
+        "numberOfSpacesAllowed": 0,
+        "oneSpaceAllowedAfterOperator": false,
+        "ignoreBlankLines": false
+      }
+    }
+  }
+}
